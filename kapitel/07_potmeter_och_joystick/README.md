@@ -141,8 +141,7 @@ void visar_potmeter()
 }
 ```
 
-Om du vrider på potentiometern ser du att LEDen lyser fyra gånger
-sätter på.
+Om du vrider på potentiometern ser du att LEDen lyser upp fyra gånger.
 
 \pagebreak
 
@@ -168,8 +167,8 @@ analogWrite(led_stift, lasa_potmeter() / 4);
 
 ## 7.10 Potentiometer: bra styrning, lösning
 
- * Du kan se att LEDen nu går från av till tänd när du slår på
-   potentiometern vrider sig
+ * Du kan se att LEDen nu går från av till tänd när du vrider på
+   potentiometern.
  * `/` betyder "delat med". Detta är samma indelningslinje som med
    bråk och procent!
 
@@ -182,8 +181,8 @@ analogWrite(led_stift, lasa_potmeter() / 4);
 Joystick | Arduino
 ---------|--------
 VCC      | 5V
-V        | A0
-H        | A1
+VRX      | A0
+VRY      | A1
 GND      | GND
 
  * Om du har anslutit denna rätt kan du nu styra LEDen med joysticken
@@ -241,6 +240,6 @@ void loop()
 ## 7.12 Potentiometer: slutuppgift
 
  * Anslut en andra LED
- * Denna andra LED ska reagera som den första LEDen, men som
+ * Denna andra LEDen ska reagera som den första LEDen, men när
    joysticken flyttas horisontellt
 
