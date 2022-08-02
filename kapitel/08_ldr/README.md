@@ -8,11 +8,11 @@ Bygg up:
 
  * en potmeter, på A0
 
-Programmerar:
+Programmera:
 
  * en `const` variabel `potmeter_stift` på riktigt stift
- * att få värd av potmetern med `analogRead`
- * att skrivar värd av potmetern till Serial Monitor
+ * att få värdet av potmetern med `analogRead`
+ * att skriva värdet av potmetern till Serial Monitor
  * vänta 100 millisecond varje `loop`
 
 \pagebreak
@@ -41,12 +41,12 @@ void loop()
 
 ## 8.3 Uppgift
 
-Skriv om programmet litegran för att ha en funktion som häter `visar_potmeter`.
+Skriv om programmet litegrann för att ha en funktion som heter `visar_potmeter`.
 
 `visar_potmeter` kan redan:
 
- * att få värd av potmetern med `analogRead`
- * att skrivar värd av potmetern till Serial Monitor
+ * få värdet av potmetern med `analogRead`
+ * skriva värdet av potmetern till Serial Monitor
 
 Addera till `visar_potmeter`:
 
@@ -63,9 +63,9 @@ else
 
 ![Dator](EmojiComputer.png) | ![Smiley](EmojiSmiley.png)
 :-------------:|:----------------------------------------: 
-`<`|'litare än'
+`<`|'mindre än'
 
-![](EmojiBowtie.png) | `512` är bara i mitten från alla möjliga värder `analogRead` kan ger
+![](EmojiBowtie.png) | `512` är bara i mitten från alla möjliga värden `analogRead` kan ger
 :-------------:|:----------------------------------------: 
 
 \pagebreak
@@ -105,17 +105,17 @@ void visar_potmeter()
 
 ## 8.5 Uppgift
 
-Byter potmeter om för en LDR.
-En LDR är ansluten sannalikt än en knapp:
+Byt potmeter mot en LDR.
+En LDR är ansluten på samma sätt som en knapp:
 
- * den första ben åker till 5V
- * den andra ben går till en motstand från 10 kOhm, som går till GND
- * den andra ben går till A0
+ * det första benet dras till 5V
+ * det andra benet dras till ett motstand med 10 kOhm, som går till GND
+ * det tredje benet går till A0
  
 Kör programmet med samma kod.
 
-Vilken värder har LDR om du sta ljus iväg med din hand?
-Vilken värder har LDR om ljus är helt på den?
+Vilket värde har LDR om du blockerar ljuset med din hand?
+Vilket värde har LDR om ljuset är helt på den?
 
 \pagebreak
 
@@ -131,11 +131,11 @@ Addera en LED på 13.
 
 Om du håller din hand över LDRen:
 
-  * LEDen skulle ljuser upp 
-  * Serial monitor skull säga 'Det ar morkt'
+  * ska LEDen lysa upp 
+  * ska Serial monitor säga 'Det ar mörkt'
 
 Om du inte håller din hand över LDRen:
 
-  * LEDen skulle vara släckt
-  * Serial monitor skull säga 'Det ar ljus'
+  * ska LEDen vara släckt
+  * ska Serial monitor säga 'Det ar ljust'
 
