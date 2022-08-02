@@ -43,7 +43,7 @@ void loop()
 
 Vi skriver vår första funktion!
 
- * Lägg till en kod tå, ovan `loop`:
+ * Lägg till en kod ovanför `loop`:
 
 ```c++
 void vanta_lite()
@@ -52,7 +52,7 @@ void vanta_lite()
 }
 ```
 
- * I `loop`, ersätt två gånger `delay(vantetid);` genom `vanta_lite();`
+ * I `loop`, ersätt `delay(vantetid);` med `vanta_lite();`
 
 \pagebreak
 
