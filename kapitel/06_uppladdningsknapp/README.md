@@ -89,7 +89,7 @@ void visar_knapp_varde()
 {
   if (digitalRead(knapp_stift) == HIGH)
   {
-    Serial.println("Knappen ar druckit");
+    Serial.println("Knappen är nertryckt");
   }
 }
 ```
@@ -121,7 +121,7 @@ void visar_knapp_varde()
 {
   if (digitalRead(knapp_stift) == HIGH)
   {
-    Serial.println("Knappen ar druckit");
+    Serial.println("Knappen är nertryckt");
   }
 }
 
@@ -135,8 +135,8 @@ void loop()
 
 ## 6.7 Laddningsknapp: släppknapp, uppgift
 
- * I `visar_knapp_varde`, om knappen inte är nedtryckt, visa
-   Arduino säg sedan "Knappen ar inte druckit"
+ * I `visar_knapp_varde`, om knappen inte är nedtryckt, visar
+   Arduino "Knappen är inte nertryckt"
  * Ändra `vantetid` till 100 millisekunder
 
 \pagebreak
@@ -151,13 +151,13 @@ const int vantetid = 100;
 
 void visar_knapp_varde()
 {
-  if (/* knappen är druckit */)
+  if (/* knappen är nertryckt */)
   {
-    // ... [berättar knappen är druckit]
+    // ... [berättar att knappen är nertryckt]
   }
   else
   {
-    Serial.println("Knappen ar inte druckit");
+    Serial.println("Knappen är inte nertryckt");
   }
 }
 ```
