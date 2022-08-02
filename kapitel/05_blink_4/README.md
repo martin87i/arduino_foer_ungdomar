@@ -1,4 +1,4 @@
-# Lekgtion 5: Blink 4
+# Lektion 5: Blink 4
 
 I dessa läs använder vi 4 lysdioder och funktioner
 
